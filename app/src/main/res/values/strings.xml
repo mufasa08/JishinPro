@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Japan Earthquakes</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+
+    <!-- Default text to show with the earthquake location ("Near the Pacific-Antarctic Ridge")
+         if no specific kilometer distance from the primary location is given [CHAR LIMIT=30] -->
+    <string name="near_the">Near the</string>
+
+    <!-- Text to display in the list when there are no earthquakes [CHAR LIMIT=NONE] -->
+    <string name="no_earthquakes">No earthquakes found.</string>
+
+    <!-- Error message when there is no internet connectivity [CHAR LIMIT=NONE] -->
+    <string name="no_internet_connection">No internet connection.</string>
+
+    <!-- Settings Menu Item [CHAR LIMIT=NONE] -->
+    <string name="settings_menu_item">Settings</string>
+    <!-- Settings Activity Title [CHAR LIMIT=NONE] -->
+    <string name="settings_title">Earthquake Settings</string>
+
+    <!-- Strings For Minimum Magnitude Preference [CHAR LIMIT=30] -->
+    <string name="settings_min_magnitude_label">Minimum Magnitude</string>
+    <string name="settings_min_magnitude_key" translatable="false">min_magnitude</string>
+    <string name="settings_min_magnitude_default" translatable="false">3</string>
+
+    <!-- Strings For Order-By Preference [CHAR LIMIT=30] -->
+    <string name="settings_order_by_label">Order By</string>
+    <string name="settings_order_by_key" translatable="false">order_by</string>
+    <string name="settings_order_by_default" translatable="false">@string/settings_order_by_magnitude_value</string>
+
+    <!-- Label for order-by magnitude option [CHAR LIMIT=20] -->
+    <string name="settings_order_by_magnitude_label">Magnitude</string>
+    <string name="settings_order_by_magnitude_value" translatable="false">magnitude</string>
+
+    <!-- Label for order-by most recent option [CHAR LIMIT=20] -->
+    <string name="settings_order_by_most_recent_label">Most Recent</string>
+    <string name="settings_order_by_most_recent_value" translatable="false">time</string>
+    <string name="title_activity_earthquake_steps">EarthquakeSteps</string>
+
+    <!-- Strings For Number of Months to show -->
+    <string name="settings_number_of_months_label">Number of months to display</string>
+    <string name="settings_number_of_months_key">number_of_months</string>
+    <string name="settings_number_of_months_default">6</string>
+    <!-- Strings For toggle settings -->
+    <string name="settings_notifications">Enable Notifications</string>
+    <string name="settings_tutorial">Enable Intro Tutorial</string>
+    <string name="settings_tutorial_default">true</string>
+
+    <!-- Slide Text -->
+    <string name="slide1_title">Jishin</string>
+    <string name="slide1_text">Earthquakes in Japan. A reference app to help you when visiting Japan.</string>
+    <string name="slide2_title">View Past Earthquakes</string>
+    <string name="slide2_text">Listed in order of magnitude or location</string>
+    <string name="slide3_title">Earthquake Preparation Guide</string>
+    <string name="slide3_text">What to do in advanced of an earthquake.</string>
+    <string name="slide4_title">Quick Tweet Widget</string>
+    <string name="slide4_text">No time to let people know something happened? Hit the widget and a simple message with your current location will be tweeted.</string>
+
+
+    <string name="settings_language">Language</string>
+    <string name="settings_language_key">language</string>
+    <string name="settings_language_label">language</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
