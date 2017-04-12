@@ -110,7 +110,9 @@ public class EarthquakeListTabFragment extends Fragment implements LoaderManager
                     Earthquake currentEarthquake = mAdapter.getItem(position);
                     if (viewId == R.id.imageButton) {
                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                        intent.setData(Uri.parse("geo:" + currentEarthquake.getLatitude() + "," + currentEarthquake.getLongitude() + "?q=" + currentEarthquake.getLatitude() + "," + currentEarthquake.getLongitude() + "(Epicentre)"));
+                        Double lat = currentEarthquake.getLatitude();
+                        Double longi = currentEarthquake.getLongitude();
+                        intent.setData(Uri.parse("geo:0,0?q=" + lat + "," + longi + "(Epicentre of Earthquake)"));
                         if (intent.resolveActivity(getActivity().getPackageManager()) != null) {
                             startActivity(intent);
                         }
@@ -128,17 +130,7 @@ public class EarthquakeListTabFragment extends Fragment implements LoaderManager
 
                     } else {
 
-                        //doShare();
-                        // Convert the String URL into a URI object (to pass into the Intent constructor)
-                        //  Uri earthquakeUri = Uri.parse(currentEarthquake.getUrl());
 
-                        // Create a new intent to view the earthquake URI
-                        // Intent websiteIntent = new Intent(Intent.ACTION_VIEW, earthquakeUri);
-
-                /* Change to open map at coordinates*/
-
-                        // Send the intent to launch a new activity
-                        //   startActivity(websiteIntent);
                     }
                 }
 

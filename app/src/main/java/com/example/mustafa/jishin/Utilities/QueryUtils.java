@@ -194,7 +194,7 @@ public final class QueryUtils {
 
                 // Create a new {@link Earthquake} object with the magnitude, location, time,
                 // and url from the JSON response.
-                Earthquake earthquake = new Earthquake(magnitude, location, time, url, coordinates.getInt(0),coordinates.getInt(1));
+                Earthquake earthquake = new Earthquake(magnitude, location, time, url, coordinates.getDouble(1), coordinates.getDouble(0));
 
                 // Add the new {@link Earthquake} to the list of earthquakes.
                 earthquakes.add(earthquake);

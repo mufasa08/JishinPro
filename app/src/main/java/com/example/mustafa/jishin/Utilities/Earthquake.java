@@ -33,9 +33,9 @@ public class Earthquake {
     private String mUrl;
 
     /**Latitude of the earthquake**/
-    private Integer latitude;
+    private Double latitude;
     /**Longitude of the earthquake**/
-    private Integer longitude;
+    private Double longitude;
 
     /**
      * Constructs a new {@link Earthquake} object.
@@ -46,7 +46,7 @@ public class Earthquake {
      *                           earthquake happened
      * @param url is the website URL to find more details about the earthquake
      */
-    public Earthquake(double magnitude, String location, long timeInMilliseconds, String url, int lat, int longi) {
+    public Earthquake(double magnitude, String location, long timeInMilliseconds, String url, Double lat, Double longi) {
         mMagnitude = magnitude;
         mLocation = location;
         mTimeInMilliseconds = timeInMilliseconds;
@@ -82,10 +82,12 @@ public class Earthquake {
     public String getUrl() {
         return mUrl;
     }
-    public int getLatitude() {
+
+    public Double getLatitude() {
         return latitude;
     }
-    public int getLongitude() {
+
+    public Double getLongitude() {
         return longitude;
     }
 }
