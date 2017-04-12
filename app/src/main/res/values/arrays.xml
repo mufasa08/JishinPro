@@ -12,63 +12,6 @@
         <item>@string/settings_order_by_most_recent_value</item>
     </string-array>
 
-    <string-array name="slideshow_number">
-
-        <!-- Slideshow#1-->
-                <item>@string/slide1_title</item>
-                <item>@string/slide1_text</item>
-
-
-                <item>@string/slide2_title</item>
-                <item>@string/slide2_text</item>
-
-                <item>@string/slide3_title</item>
-                <item>@string/slide3_text</item>
-
-                <item>@string/slide4_title</item>
-                <item>@string/slide4_text</item>
-
-
-
-<!-- Slideshow#2-->
-                <item>@string/slide1_title</item>
-                <item>@string/slide1_text</item>
-
-                <item>@string/slide2_title</item>
-                <item>@string/slide2_text</item>
-
-                <item>@string/slide3_title</item>
-                <item>@string/slide3_text</item>
-                <item>@string/slide4_title</item>
-                <item>@string/slide4_text</item>
-        <!-- Slideshow#3-->
-
-                <item>@string/slide1_title</item>
-                <item>@string/slide1_text</item>
-
-                <item>@string/slide2_title</item>
-                <item>@string/slide2_text</item>
-
-                <item>@string/slide3_title</item>
-                <item>@string/slide3_text</item>
-
-                <item>@string/slide4_title</item>
-                <item>@string/slide4_text</item>
-        <!-- Slideshow#4-->
-
-                <item>@string/slide1_title</item>
-                <item>@string/slide1_text</item>
-
-                <item>@string/slide2_title</item>
-                <item>@string/slide2_text</item>
-
-                <item>@string/slide3_title</item>
-                <item>@string/slide3_text</item>
-
-                <item>@string/slide4_title</item>
-                <item>@string/slide4_text</item>
-
-</string-array>
 
 
 </resources>

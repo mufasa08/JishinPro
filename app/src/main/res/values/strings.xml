@@ -39,15 +39,24 @@
     <string name="title_activity_earthquake_steps">EarthquakeSteps</string>
 
     <!-- Strings For Number of Months to show -->
-    <string name="settings_number_of_months_label">Number of months to display</string>
-    <string name="settings_number_of_months_key">number_of_months</string>
-    <string name="settings_number_of_months_default">6</string>
+    <string name="settings_number_of_days_label">Number of days to display(Max 20 years)</string>
+    <string name="settings_number_of_days_key">number_of_months</string>
+    <string name="settings_number_of_days_default">30</string>
     <!-- Strings For toggle settings -->
     <string name="settings_notifications">Enable Notifications</string>
     <string name="settings_tutorial">Enable Intro Tutorial</string>
     <string name="settings_tutorial_default">true</string>
 
     <!-- Slide Text -->
+
+
+    <string name="settings_language">Language</string>
+    <string name="settings_language_key">language</string>
+    <string name="settings_language_label">language</string>
+
+    <!-- Slideshows titles-->
+
+    <!-- Intro Slide Show-->
     <string name="slide1_title">Jishin</string>
     <string name="slide1_text">Earthquakes in Japan. A reference app to help you when visiting Japan.</string>
     <string name="slide2_title">View Past Earthquakes</string>
@@ -58,10 +67,56 @@
     <string name="slide4_text">No time to let people know something happened? Hit the widget and a simple message with your current location will be tweeted.</string>
 
 
-    <string name="settings_language">Language</string>
-    <string name="settings_language_key">language</string>
-    <string name="settings_language_label">language</string>
+    <!-- =Slide Show 1-->
+    <string name="title_activity_slideshowone">SlideShowOne</string>
+    <string name="show1_slide1_title">Jishin</string>
+    <string name="show1_slide1_text">Earthquakes in Japan. A reference app to help you when visiting Japan.</string>
+    <string name="show1_slide2_title">View Past Earthquakes</string>
+    <string name="show1_slide2_text">Listed in order of magnitude or location</string>
+    <string name="show1_slide3_title">Earthquake Preparation Guide</string>
+    <string name="show1_slide3_text">What to do in advanced of an earthquake.</string>
+    <string name="show1_slide4_title">Quick Tweet Widget</string>
+    <string name="show1_slide4_text">No time to let people know something happened? Hit the widget and a simple message with your current location will be tweeted.</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- =Slide Show 2-->
+    <string name="title_activity_slideshowfour">SlideShowFour</string>
+    <string name="show2_slide1_title">Jishin</string>
+    <string name="show2_slide1_text">Earthquakes in Japan. A reference app to help you when visiting Japan.</string>
+    <string name="show2_slide2_title">View Past Earthquakes</string>
+    <string name="show2_slide2_text">Listed in order of magnitude or location</string>
+    <string name="show2_slide3_title">Earthquake Preparation Guide</string>
+    <string name="show2_slide3_text">What to do in advanced of an earthquake.</string>
+    <string name="show2_slide4_title">Quick Tweet Widget</string>
+    <string name="show2_slide4_text">No time to let people know something happened? Hit the widget and a simple message with your current location will be tweeted.</string>
+
+    <!-- =Slide Show 3-->
+    <string name="title_activity_slideshowthree">SlideShowThree</string>
+    <string name="show3_slide1_title">Jishin</string>
+    <string name="show3_slide1_text">Earthquakes in Japan. A reference app to help you when visiting Japan.</string>
+    <string name="show3_slide2_title">View Past Earthquakes</string>
+    <string name="show3_slide2_text">Listed in order of magnitude or location</string>
+    <string name="show3_slide3_title">Earthquake Preparation Guide</string>
+    <string name="show3_slide3_text">What to do in advanced of an earthquake.</string>
+    <string name="show3_slide4_title">Quick Tweet Widget</string>
+    <string name="show3_slide4_text">No time to let people know something happened? Hit the widget and a simple message with your current location will be tweeted.</string>
+
+    <!-- =Slide Show 4-->
+    <string name="title_activity_slideshowtwo">SlideShowTwo</string>
+    <string name="show4_slide1_title">Jishin</string>
+    <string name="show4_slide1_text">Earthquakes in Japan. A reference app to help you when visiting Japan.</string>
+    <string name="show4_slide2_title">View Past Earthquakes</string>
+    <string name="show4_slide2_text">Listed in order of magnitude or location</string>
+    <string name="show4_slide3_title">Earthquake Preparation Guide</string>
+    <string name="show4_slide3_text">What to do in advanced of an earthquake.</string>
+    <string name="show4_slide4_title">Quick Tweet Widget</string>
+    <string name="show4_slide4_text">No time to let people know something happened? Hit the widget and a simple message with your current location will be tweeted.</string>
+
+
+    <string name="prep_icon1_text">Checklist</string>
+    <string name="prep_icon2_text">Don\'t!</string>
+    <string name="prep_icon3_text">At Home</string>
+    <string name="prep_icon4_text">Outside</string>
+    <string name="prep_icon5_text">At the Office</string>
+    <string name="prep_icon6_text">For More Information</string>
 </resources>

@@ -30,9 +30,26 @@
                 android:value="com.example.mustafa.jishin.MainActivity" />
         </activity>
         <activity
-            android:name=".Utilities.SlideShow"
+            android:name=".Slideshows.AppOpenSlideShow"
             android:label="@string/title_activity_earthquake_steps"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Slideshows.SlideShowOne"
+            android:label="@string/title_activity_slideshowone"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Slideshows.SlideShowTwo"
+            android:label="@string/title_activity_slideshowtwo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Slideshows.SlideShowThree"
+            android:label="@string/title_activity_slideshowthree"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Slideshows.SlideShowFour"
+            android:label="@string/title_activity_slideshowfour"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Checklist"></activity>
     </application>
 
 </manifest>

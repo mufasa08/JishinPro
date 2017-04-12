@@ -2,6 +2,7 @@
 
 <!-- Layout for a single list item that displays an earthquake -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="?android:attr/listPreferredItemHeight"
@@ -29,7 +30,7 @@
         android:layout_gravity="center_vertical"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_weight="1"
+        android:layout_weight="0.46"
         android:orientation="vertical">
 
         <TextView
@@ -44,16 +45,49 @@
             android:textSize="12sp"
             tools:text="30km S of" />
 
-        <TextView
-            android:id="@+id/primary_location"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ellipsize="end"
-            android:maxLines="2"
-            android:textColor="@color/textColorEarthquakeLocation"
-            android:textSize="16sp"
-            tools:text="Long placeholder location that should wrap to more than 2 lines of text" />
+        <LinearLayout
+            android:layout_width="235dp"
+            android:layout_height="match_parent"
+            android:weightSum="1">
 
+            <TextView
+                android:id="@+id/primary_location"
+                android:layout_width="131dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/textColorEarthquakeLocation"
+                android:textSize="16sp"
+                tools:text="Long placeholder location that should wrap to more than 2 lines of text"
+                android:layout_weight="0.18" />
+
+            <ImageButton
+                android:layout_width="10dp"
+                android:layout_height="27dp"
+                app:srcCompat="@drawable/marker"
+                android:id="@+id/imageButton"
+                android:maxLines="1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:background="@android:color/transparent"
+                android:padding="5dp"
+                android:focusable="false"
+                android:layout_weight="0.21"
+                android:elevation="1dp" />
+
+            <ImageButton
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/share"
+                android:id="@+id/shareButton"
+                android:maxLines="1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:background="@android:color/transparent"
+                android:padding="5dp"
+                android:focusable="false"
+                android:layout_weight="0.21" />
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout

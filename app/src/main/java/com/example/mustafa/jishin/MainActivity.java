@@ -22,34 +22,32 @@ import android.widget.TextView;
 import com.example.mustafa.jishin.Fragments.EarthquakeListTabFragment;
 import com.example.mustafa.jishin.Fragments.SecondFragment;
 import com.example.mustafa.jishin.Utilities.EarthquakeAdapter;
-import com.example.mustafa.jishin.Utilities.SlideShow;
+import com.example.mustafa.jishin.Slideshows.AppOpenSlideShow;
 
 public class MainActivity extends AppCompatActivity implements SharedPreferences.OnSharedPreferenceChangeListener {
 
-    /**
-     * The {@link android.support.v4.view.PagerAdapter} that will provide
-     * fragments for each of the sections. We use a
-     * {@link FragmentPagerAdapter} derivative, which will keep every
-     * loaded fragment in memory. If this becomes too memory intensive, it
-     * may be best to switch to a
-     * {@link android.support.v4.app.FragmentStatePagerAdapter}.
-     */
     private EarthquakeListTabFragment earthquakeListTabFragment;
     private SecondFragment secondFragment;
-    /** URL for earthquake data from the USGS dataset */
+    /**
+     * URL for earthquake data from the USGS dataset
+     */
     private static final String USGS_REQUEST_URL =
             "https://earthquake.usgs.gov/fdsnws/event/1/query";
 
 
     private static final int EARTHQUAKE_LOADER_ID = 1;
 
-    /** Adapter for the list of earthquakes */
+    /**
+     * Adapter for the list of earthquakes
+     */
     private EarthquakeAdapter mAdapter;
 
-    /** TextView that is displayed when the list is empty */
+    /**
+     * TextView that is displayed when the list is empty
+     */
     private TextView mEmptyStateTextView;
     private SectionsPagerAdapter mSectionsPagerAdapter;
-    public Activity mActivity =this;
+    public Activity mActivity = this;
     /**
      * The {@link ViewPager} that will host the section contents.
      */
@@ -67,12 +65,11 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
         prefs.registerOnSharedPreferenceChangeListener(this);
         //Initialize Intro slides if first time
         boolean isFirstStart = prefs.getBoolean("firstStart", true);
-        if(isFirstStart) {
-            Intent intent = new Intent(this, SlideShow.class);
-            intent.putExtra("int_code",0);
+        if (isFirstStart) {
+            Intent intent = new Intent(this, AppOpenSlideShow.class);
             startActivity(intent);
-            SharedPreferences.Editor edit= prefs.edit();
-            edit.putBoolean("firstStart",false);
+            SharedPreferences.Editor edit = prefs.edit();
+            edit.putBoolean("firstStart", false);
             edit.apply();
         }
 
@@ -125,7 +122,7 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
     @Override
     public void onSharedPreferenceChanged(SharedPreferences prefs, String key) {
         if (key.equals(getString(R.string.settings_min_magnitude_key)) ||
-                key.equals(getString(R.string.settings_order_by_key))){
+                key.equals(getString(R.string.settings_order_by_key))) {
 
         }
     }
@@ -136,18 +133,18 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
         public SectionsPagerAdapter(FragmentManager fm) {
             super(fm);
         }
-    //TODO instantiateitem override
+        //TODO instantiateitem override
 
-        private String getFragmentTag(int pos){
-            return "android:switcher:"+R.id.container+":"+pos;
+        private String getFragmentTag(int pos) {
+            return "android:switcher:" + R.id.container + ":" + pos;
         }
 
         @Override
         public Fragment getItem(int position) {
             if (position == 0) {
-                return new EarthquakeListTabFragment();
-            } else /*if (position == 1)*/{
                 return new SecondFragment();
+            } else /*if (position == 1)*/ {
+                return new EarthquakeListTabFragment();
             }
         }
 
@@ -161,11 +158,11 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "Past Earthquakes";
-                case 1:
                     return "Preparations";
-               // case 2:
-                  //  return "SECTION 3";
+                case 1:
+                    return "Past Earthquakes";
+                // case 2:
+                //  return "SECTION 3";
             }
             return null;
         }

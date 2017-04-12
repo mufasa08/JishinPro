@@ -17,11 +17,15 @@ package com.example.mustafa.jishin.Utilities;
 
 import android.content.Context;
 import android.graphics.drawable.GradientDrawable;
+import android.media.Image;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.mustafa.jishin.R;
@@ -61,7 +65,7 @@ public class EarthquakeAdapter extends ArrayAdapter<Earthquake> {
      * in the list of earthquakes.
      */
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, View convertView, final ViewGroup parent) {
         // Check if there is an existing list item view (called convertView) that we can reuse,
         // otherwise, if convertView is null, then inflate a new list item layout.
         View listItemView = convertView;
@@ -139,6 +143,20 @@ public class EarthquakeAdapter extends ArrayAdapter<Earthquake> {
         timeView.setText(formattedTime);
 
         // Return the list item view that is now showing the appropriate data
+        ImageButton button = (ImageButton) listItemView.findViewById(R.id.imageButton);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((ListView) parent).performItemClick(v, position, 0); // Let the event be handled in onItemClick()
+            }
+        });
+        ImageButton button2 = (ImageButton) listItemView.findViewById(R.id.shareButton);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((ListView) parent).performItemClick(v, position, 0); // Let the event be handled in onItemClick()
+            }
+        });
         return listItemView;
     }
 

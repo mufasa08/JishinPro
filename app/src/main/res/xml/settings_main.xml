@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-<PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/settings_title">
 
     <EditTextPreference
-        android:defaultValue="@string/settings_number_of_months_default"
+        android:defaultValue="@string/settings_number_of_days_default"
+        android:key="@string/settings_number_of_days_key"
+        android:numeric="integer"
         android:selectAllOnFocus="true"
         android:singleLine="true"
-        android:title="@string/settings_number_of_months_label"
-        android:key="@string/settings_number_of_months_key" />
+        android:title="@string/settings_number_of_days_label" />
     <ListPreference
         android:defaultValue="@string/settings_order_by_default"
         android:entries="@array/settings_order_by_labels"
@@ -24,14 +24,10 @@
         android:key="@string/settings_min_magnitude_key"
         android:selectAllOnFocus="true"
         android:title="@string/settings_min_magnitude_label" />
-
-    <SwitchPreference
-        android:defaultValue="false"
-        android:title="@string/settings_notifications"
-        android:key="notifications_en" />
-    <SwitchPreference
-        android:defaultValue="@string/settings_tutorial_default"
-        android:title="@string/settings_tutorial"
-        android:key="notifications_en" />
-
+    <!--
+        <SwitchPreference
+            android:defaultValue="false"
+            android:title="@string/settings_notifications"
+            android:key="notifications_en" />
+    -->
 </PreferenceScreen>
