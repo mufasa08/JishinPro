@@ -101,22 +101,42 @@
     <string name="show3_slide4_title">Quick Tweet Widget</string>
     <string name="show3_slide4_text">No time to let people know something happened? Hit the widget and a simple message with your current location will be tweeted.</string>
 
-    <!-- =Slide Show 4-->
-    <string name="title_activity_slideshowtwo">SlideShowTwo</string>
-    <string name="show4_slide1_title">Jishin</string>
-    <string name="show4_slide1_text">Earthquakes in Japan. A reference app to help you when visiting Japan.</string>
-    <string name="show4_slide2_title">View Past Earthquakes</string>
-    <string name="show4_slide2_text">Listed in order of magnitude or location</string>
-    <string name="show4_slide3_title">Earthquake Preparation Guide</string>
-    <string name="show4_slide3_text">What to do in advanced of an earthquake.</string>
-    <string name="show4_slide4_title">Quick Tweet Widget</string>
-    <string name="show4_slide4_text">No time to let people know something happened? Hit the widget and a simple message with your current location will be tweeted.</string>
+    <string name="title_activity_slideshowtwo">forgot what is here</string>
+    <!-- toknow-->
+    <string name="show4_slide1_title">During the earthquake</string>
+    <string name="show4_slide1_text"></string>
+    <string name="show4_slide2_title">Earthquake! First, protect yourself</string>
+    <string name="show4_slide2_text">When you feel a tremor or receive an earthquake early warning, first, protect yourself. Hide under a sturdy table or a place where you will be protected from falling objects or furniture and other heavy items toppling over or sliding into you, and wait for the shaking to subside.</string>
+    <string name="show4_slide3_title">Points to heed on high floors</string>
+    <string name="show4_slide3_text">On high floors, the swaying could last for several minutes. In addition to causing objects to fall or furniture, etc., to topple over, the large, slow swaying could cause them to slide a large distance.</string>
+    <string name="show4_slide4_title">Immediately after the earthquake</string>
+    <string name="show4_slide4_text"></string>
+    <string name="show4_slide5_title">Stay calm and check possible sources of fire. Take first response fire extinguishing measures if necessary. </string>
+    <string name="show4_slide5_text">If you are using an open flame, stay calm and turn it off after the shaking subsides. If a fire breaks out, act calmly and put it out</string>
+    <string name="show4_slide6_title">Hasty actions could cause injuries</string>
+    <string name="show4_slide6_text">Be careful of fallen objects, furniture, etc., that has toppled over, and broken glass inside the room. Don’t rush out or you could be injured by falling tiles, broken window glass, and signboards.</string>
+    <string name="show4_slide7_title">Open the window or door, and secure an exit</string>
+    <string name="show4_slide7_text">After the shaking has subsided, secure an exit for evacuation</string>
+    <string name="show4_slide8_title">Stay clear of gates or walls</string>
+    <string name="show4_slide8_text">If you feel the tremor while outside, stay clear of concrete block walls and other things that could collapse.</string>
+    <string name="show4_slide9_title">After the Earthquake</string>
+    <string name="show4_slide9_text"></string>
+    <string name="show4_slide10_title">Fire and tsunami: safe evacuation</string>
+    <string name="show4_slide10_text">If your area is in danger of a large-scale fi re, and you feel endangered, evacuate to a temporary evacuation area or evacuation area. If you are near the ocean and feel a large tremor or if a tsunami alert has been issued, quickly evacuate to a safe place such as high ground.</string>
+    <string name="show4_slide11_title">Correct information and proper actions</string>
+    <string name="show4_slide11_text">Gather correct information from the radio, TV, fire department, and the government.</string>
+    <string name="show4_slide12_title">Confirm the safety of your family and neighbors</string>
+    <string name="show4_slide12_text">After confirming the safety of your family, check if your neighbors are safe.</string>
+    <string name="show4_slide13_title">Cooperate with each other for rescue and relief</string>
+    <string name="show4_slide13_text">Neighbors should cooperate in rescuing and providing relief to peoplewho have been trapped under collapsed houses or furniture.</string>
+    <string name="show4_slide14_title">Before evacuating, check your electricity and gas</string>
+    <string name="show4_slide14_text">If you need to evacuate, turn off the circuit breakers and close the main gas valve before evacuating.</string>
 
 
     <string name="prep_icon1_text">Checklist</string>
     <string name="prep_icon2_text">Don\'t!</string>
     <string name="prep_icon3_text">At Home</string>
     <string name="prep_icon4_text">Outside</string>
-    <string name="prep_icon5_text">At the Office</string>
+    <string name="prep_icon5_text">Things to Remember</string>
     <string name="prep_icon6_text">For More Information</string>
 </resources>

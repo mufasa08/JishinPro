@@ -34,19 +34,19 @@
             android:label="@string/title_activity_earthquake_steps"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Slideshows.SlideShowOne"
+            android:name=".Slideshows.Dont"
             android:label="@string/title_activity_slideshowone"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Slideshows.SlideShowTwo"
+            android:name=".Slideshows.AtHome"
             android:label="@string/title_activity_slideshowtwo"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Slideshows.SlideShowThree"
+            android:name=".Slideshows.Outside"
             android:label="@string/title_activity_slideshowthree"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Slideshows.SlideShowFour"
+            android:name=".Slideshows.ToRemember"
             android:label="@string/title_activity_slideshowfour"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Checklist"></activity>

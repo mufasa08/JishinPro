@@ -15,7 +15,7 @@ import com.example.mustafa.jishin.R;
 import com.github.paolorotolo.appintro.AppIntro;
 import com.github.paolorotolo.appintro.AppIntroFragment;
 
-public class SlideShowFour extends AppIntro {
+public class Outside extends AppIntro {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -13,10 +13,10 @@ import android.widget.GridView;
 import com.example.mustafa.jishin.Checklist;
 import com.example.mustafa.jishin.CustomGridViewActivity;
 import com.example.mustafa.jishin.R;
-import com.example.mustafa.jishin.Slideshows.SlideShowFour;
-import com.example.mustafa.jishin.Slideshows.SlideShowThree;
-import com.example.mustafa.jishin.Slideshows.SlideShowTwo;
-import com.example.mustafa.jishin.Slideshows.SlideShowOne;
+import com.example.mustafa.jishin.Slideshows.ToRemember;
+import com.example.mustafa.jishin.Slideshows.Outside;
+import com.example.mustafa.jishin.Slideshows.AtHome;
+import com.example.mustafa.jishin.Slideshows.Dont;
 
 public class SecondFragment extends Fragment {
     GridView androidGridView;
@@ -30,7 +30,7 @@ public class SecondFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_second, container, false);
         int[] gridViewImageId = {
-                R.drawable.icon_checklist, R.drawable.forbidden, R.drawable.home, R.drawable.outside, R.drawable.office, R.drawable.web
+                R.drawable.icon_checklist, R.drawable.forbidden, R.drawable.home, R.drawable.outside, R.drawable.remember, R.drawable.web
 
         };
         String[] gridViewString = {
@@ -46,23 +46,23 @@ public class SecondFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int i, long id) {
-                Intent intent = new Intent(getActivity(), SlideShowOne.class);
+                Intent intent = new Intent(getActivity(), Dont.class);
                 //Toast.makeText(getContext(), "GridView Item: " + gridViewString[+i], Toast.LENGTH_LONG).show();
                 switch (i) {
                     case 0:
                         intent = new Intent(getActivity(), Checklist.class);
                         break;
                     case 1:
-                        intent = new Intent(getActivity(), SlideShowOne.class);
+                        intent = new Intent(getActivity(), Dont.class);
                         break;
                     case 2:
-                        intent = new Intent(getActivity(), SlideShowTwo.class);
+                        intent = new Intent(getActivity(), AtHome.class);
                         break;
                     case 3:
-                        intent = new Intent(getActivity(), SlideShowThree.class);
+                        intent = new Intent(getActivity(), Outside.class);
                         break;
                     case 4:
-                        intent = new Intent(getActivity(), SlideShowFour.class);
+                        intent = new Intent(getActivity(), ToRemember.class);
                         break;
                     case 5:
                         intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.metro.tokyo.jp/ENGLISH/GUIDE/BOSAI/"));
