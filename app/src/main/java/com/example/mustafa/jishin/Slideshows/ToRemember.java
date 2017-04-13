@@ -42,6 +42,7 @@ public class ToRemember extends AppIntro {
         addSlide(AppIntroFragment.newInstance(getText(R.string.show4_slide12_title), getText(R.string.show4_slide12_text), R.drawable.remember_slide12, Color.parseColor("#1976D2")));
         addSlide(AppIntroFragment.newInstance(getText(R.string.show4_slide13_title), getText(R.string.show4_slide13_text), R.drawable.remember_slide13, Color.parseColor("#1976D2")));
         addSlide(AppIntroFragment.newInstance(getText(R.string.show4_slide14_title), getText(R.string.show4_slide14_text), R.drawable.remember_slide14, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.credit_title), getText(R.string.credit_text), R.drawable.gnav_logo, Color.parseColor("#1976D2")));
 
         // OPTIONAL METHODS
         // Override bar/separator color.

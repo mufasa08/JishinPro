@@ -37,6 +37,7 @@ public class AtHome extends AppIntro {
         addSlide(AppIntroFragment.newInstance(getText(R.string.show2_slide7_title), getText(R.string.show2_slide7_text), R.drawable.athome_slide7, Color.parseColor("#1976D2")));
         addSlide(AppIntroFragment.newInstance(getText(R.string.show2_slide8_title), getText(R.string.show2_slide8_text), R.drawable.athome_slide8, Color.parseColor("#1976D2")));
         addSlide(AppIntroFragment.newInstance(getText(R.string.show2_slide9_title), getText(R.string.show2_slide9_text), R.drawable.athome_slide9, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.credit_title), getText(R.string.credit_text), R.drawable.gnav_logo, Color.parseColor("#1976D2")));
         // OPTIONAL METHODS
         // Override bar/separator color.
         setBarColor(Color.parseColor("#3F51B5"));

@@ -47,6 +47,7 @@ public class Outside extends AppIntro {
         addSlide(AppIntroFragment.newInstance(getText(R.string.show3_slide17_title), getText(R.string.show3_slide17_text), R.drawable.outside_slide12, Color.parseColor("#1976D2")));
         addSlide(AppIntroFragment.newInstance(getText(R.string.show3_slide18_title), getText(R.string.show3_slide18_text), R.drawable.outside_slide13, Color.parseColor("#1976D2")));
         addSlide(AppIntroFragment.newInstance(getText(R.string.show3_slide19_title), getText(R.string.show3_slide19_text), R.drawable.outside_slide14, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.credit_title), getText(R.string.credit_text), R.drawable.gnav_logo, Color.parseColor("#1976D2")));
         // OPTIONAL METHODS
         // Override bar/separator color.
         setBarColor(Color.parseColor("#3F51B5"));

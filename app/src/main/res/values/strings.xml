@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Japan Earthquakes</string>
+    <string name="app_name">Earthquakes in Japan</string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
 
@@ -57,14 +57,14 @@
     <!-- Slideshows titles-->
 
     <!-- Intro Slide Show-->
-    <string name="slide1_title">Jishin</string>
-    <string name="slide1_text">Earthquakes in Japan. A reference app to help you when visiting Japan.</string>
+    <string name="slide1_title">Earthquakes in Japan</string>
+    <string name="slide1_text">A reference app to help you when visiting Japan.</string>
     <string name="slide2_title">View Past Earthquakes</string>
-    <string name="slide2_text">Listed in order of magnitude or location</string>
-    <string name="slide3_title">Earthquake Preparation Guide</string>
-    <string name="slide3_text">What to do in advanced of an earthquake.</string>
-    <string name="slide4_title">Quick Tweet Widget</string>
-    <string name="slide4_text">No time to let people know something happened? Hit the widget and a simple message with your current location will be tweeted.</string>
+    <string name="slide2_text">Listed in order of magnitude or location. See up to 20 years into the past!</string>
+    <string name="slide3_title">Earthquake data</string>
+    <string name="slide3_text">View the location of earthquakes on google maps or share with others.</string>
+    <string name="slide4_title">Earthquake Preparation Guide</string>
+    <string name="slide4_text">How can you prepare yourself? What can you do in the event of an earthquake?</string>
 
 
     <!-- =Slide Show 1-->
@@ -191,4 +191,12 @@
     <string name="prep_icon4_text">Outside</string>
     <string name="prep_icon5_text">Things to Remember</string>
     <string name="prep_icon6_text">For More Information</string>
+    <string name="checklistitem1">Random Text</string>
+    <string name="checklistitem2">Random Text here too</string>
+
+
+    <!-- Credit-->
+    <string name="credit_title">Credits</string>
+    <string name="credit_text">The content of this slideshow was provided by the Tokyo Metropolitan Government. For More information please visit their website.</string>
+
 </resources>

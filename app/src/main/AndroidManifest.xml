@@ -49,7 +49,8 @@
             android:name=".Slideshows.ToRemember"
             android:label="@string/title_activity_slideshowfour"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".BagChecklist"></activity>
+        <activity android:name=".BagChecklist" />
+        <activity android:name=".Utilities.ChecklistGridViewActivity"></activity>
     </application>
 
 </manifest>

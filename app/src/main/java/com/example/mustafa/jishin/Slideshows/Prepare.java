@@ -38,6 +38,7 @@ public class Prepare extends AppIntro {
         addSlide(AppIntroFragment.newInstance(getText(R.string.show1_slide8_title), getText(R.string.show1_slide8_text), R.drawable.prepare_slide8, Color.parseColor("#1976D2")));
         addSlide(AppIntroFragment.newInstance(getText(R.string.show1_slide9_title), getText(R.string.show1_slide9_text), R.drawable.prepare_slide9, Color.parseColor("#1976D2")));
         addSlide(AppIntroFragment.newInstance(getText(R.string.show1_slide10_title), getText(R.string.show1_slide10_text), R.drawable.prepare_slide10, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.credit_title), getText(R.string.credit_text), R.drawable.gnav_logo, Color.parseColor("#1976D2")));
         // OPTIONAL METHODS
         // Override bar/separator color.
         setBarColor(Color.parseColor("#3F51B5"));

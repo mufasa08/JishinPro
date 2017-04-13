@@ -27,10 +27,10 @@ public class AppOpenSlideShow extends AppIntro {
 
         // Instead of fragments, you can also use our default slide
         // Just set a title, description, background and image. AppIntro will do the rest.
-        addSlide(AppIntroFragment.newInstance(getText(R.string.slide1_title), getText(R.string.slide1_text), R.mipmap.ic_launcher, Color.parseColor("#1976D2")));
-        addSlide(AppIntroFragment.newInstance(getText(R.string.slide2_title), getText(R.string.slide2_text), R.mipmap.ic_launcher, Color.parseColor("#1976D2")));
-        addSlide(AppIntroFragment.newInstance(getText(R.string.slide3_title), getText(R.string.slide3_text), R.mipmap.ic_launcher, Color.parseColor("#1976D2")));
-        addSlide(AppIntroFragment.newInstance(getText(R.string.slide4_title), getText(R.string.slide4_text), R.drawable.twitter_icon, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.slide1_title), getText(R.string.slide1_text), R.drawable.earthquakehome, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.slide2_title), getText(R.string.slide2_text), R.drawable.history, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.slide3_title), getText(R.string.slide3_text), R.drawable.map, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.slide4_title), getText(R.string.slide4_text), R.drawable.prepare, Color.parseColor("#1976D2")));
         // OPTIONAL METHODS
         // Override bar/separator color.
         setBarColor(Color.parseColor("#3F51B5"));
