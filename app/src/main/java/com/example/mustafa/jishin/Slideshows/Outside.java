@@ -28,10 +28,25 @@ public class Outside extends AppIntro {
 
         // Instead of fragments, you can also use our default slide
         // Just set a title, description, background and image. AppIntro will do the rest.
-        addSlide(AppIntroFragment.newInstance(getText(R.string.slide1_title), getText(R.string.slide1_text), R.mipmap.ic_launcher, Color.parseColor("#1976D2")));
-        addSlide(AppIntroFragment.newInstance(getText(R.string.slide2_title), getText(R.string.slide2_text), R.mipmap.ic_launcher, Color.parseColor("#1976D2")));
-        addSlide(AppIntroFragment.newInstance(getText(R.string.slide3_title), getText(R.string.slide3_text), R.mipmap.ic_launcher, Color.parseColor("#1976D2")));
-        addSlide(AppIntroFragment.newInstance(getText(R.string.slide4_title), getText(R.string.slide4_text), R.drawable.twitter_icon, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.show3_slide1_title), getText(R.string.show3_slide1_text), R.drawable.outside_slide1, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.show3_slide2_title), getText(R.string.show3_slide2_text), R.drawable.outside_slide3, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.show3_slide3_title), getText(R.string.show3_slide3_text), R.drawable.outside_slide3, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.show3_slide4_title), getText(R.string.show3_slide4_text), R.drawable.outside_slide4, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.show3_slide5_title), getText(R.string.show3_slide5_text), R.drawable.outside_slide5, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.show3_slide6_title), getText(R.string.show3_slide6_text), R.drawable.outside_slide6, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.show3_slide7_title), getText(R.string.show3_slide7_text), R.drawable.outside_slide7, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.show3_slide8_title), getText(R.string.show3_slide8_text), R.drawable.outside_slide8, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.show3_slide9_title), getText(R.string.show3_slide9_text), R.drawable.outside_slide9, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.show3_slide10_title), getText(R.string.show3_slide10_text), R.drawable.outside_slide10, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.show3_slide11_title), getText(R.string.show3_slide11_text), R.drawable.outside_slide11, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.show3_slide12_title), getText(R.string.show3_slide12_text), R.drawable.outside_slide12, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.show3_slide13_title), getText(R.string.show3_slide13_text), R.drawable.outside_slide13, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.show3_slide14_title), getText(R.string.show3_slide14_text), R.drawable.outside_slide14, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.show3_slide15_title), getText(R.string.show3_slide15_text), R.drawable.outside_slide10, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.show3_slide16_title), getText(R.string.show3_slide16_text), R.drawable.outside_slide11, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.show3_slide17_title), getText(R.string.show3_slide17_text), R.drawable.outside_slide12, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.show3_slide18_title), getText(R.string.show3_slide18_text), R.drawable.outside_slide13, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.show3_slide19_title), getText(R.string.show3_slide19_text), R.drawable.outside_slide14, Color.parseColor("#1976D2")));
         // OPTIONAL METHODS
         // Override bar/separator color.
         setBarColor(Color.parseColor("#3F51B5"));
