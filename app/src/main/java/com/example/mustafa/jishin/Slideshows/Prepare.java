@@ -15,7 +15,7 @@ import com.example.mustafa.jishin.R;
 import com.github.paolorotolo.appintro.AppIntro;
 import com.github.paolorotolo.appintro.AppIntroFragment;
 
-public class Dont extends AppIntro {
+public class Prepare extends AppIntro {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,10 +28,16 @@ public class Dont extends AppIntro {
 
         // Instead of fragments, you can also use our default slide
         // Just set a title, description, background and image. AppIntro will do the rest.
-        addSlide(AppIntroFragment.newInstance(getText(R.string.slide1_title), getText(R.string.slide1_text), R.mipmap.ic_launcher, Color.parseColor("#1976D2")));
-        addSlide(AppIntroFragment.newInstance(getText(R.string.slide2_title), getText(R.string.slide2_text), R.mipmap.ic_launcher, Color.parseColor("#1976D2")));
-        addSlide(AppIntroFragment.newInstance(getText(R.string.slide3_title), getText(R.string.slide3_text), R.mipmap.ic_launcher, Color.parseColor("#1976D2")));
-        addSlide(AppIntroFragment.newInstance(getText(R.string.slide4_title), getText(R.string.slide4_text), R.drawable.twitter_icon, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.show1_slide1_title), getText(R.string.show1_slide1_text), R.drawable.prepare_slide1, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.show1_slide2_title), getText(R.string.show1_slide2_text), R.drawable.prepare_slide3, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.show1_slide3_title), getText(R.string.show1_slide3_text), R.drawable.prepare_slide3, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.show1_slide4_title), getText(R.string.show1_slide4_text), R.drawable.prepare_slide4, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.show1_slide5_title), getText(R.string.show1_slide5_text), R.drawable.prepare_slide5, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.show1_slide6_title), getText(R.string.show1_slide6_text), R.drawable.prepare_slide6, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.show1_slide7_title), getText(R.string.show1_slide7_text), R.drawable.prepare_slide7, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.show1_slide8_title), getText(R.string.show1_slide8_text), R.drawable.prepare_slide8, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.show1_slide9_title), getText(R.string.show1_slide9_text), R.drawable.prepare_slide9, Color.parseColor("#1976D2")));
+        addSlide(AppIntroFragment.newInstance(getText(R.string.show1_slide10_title), getText(R.string.show1_slide10_text), R.drawable.prepare_slide10, Color.parseColor("#1976D2")));
         // OPTIONAL METHODS
         // Override bar/separator color.
         setBarColor(Color.parseColor("#3F51B5"));

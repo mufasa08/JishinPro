@@ -10,13 +10,13 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
-import com.example.mustafa.jishin.Checklist;
+import com.example.mustafa.jishin.BagChecklist;
 import com.example.mustafa.jishin.CustomGridViewActivity;
 import com.example.mustafa.jishin.R;
 import com.example.mustafa.jishin.Slideshows.ToRemember;
 import com.example.mustafa.jishin.Slideshows.Outside;
 import com.example.mustafa.jishin.Slideshows.AtHome;
-import com.example.mustafa.jishin.Slideshows.Dont;
+import com.example.mustafa.jishin.Slideshows.Prepare;
 
 public class SecondFragment extends Fragment {
     GridView androidGridView;
@@ -30,7 +30,7 @@ public class SecondFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_second, container, false);
         int[] gridViewImageId = {
-                R.drawable.icon_checklist, R.drawable.forbidden, R.drawable.home, R.drawable.outside, R.drawable.remember, R.drawable.web
+                R.drawable.icon_checklist, R.drawable.prepare, R.drawable.home, R.drawable.outside, R.drawable.remember, R.drawable.web
 
         };
         String[] gridViewString = {
@@ -46,14 +46,14 @@ public class SecondFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int i, long id) {
-                Intent intent = new Intent(getActivity(), Dont.class);
+                Intent intent = new Intent(getActivity(), Prepare.class);
                 //Toast.makeText(getContext(), "GridView Item: " + gridViewString[+i], Toast.LENGTH_LONG).show();
                 switch (i) {
                     case 0:
-                        intent = new Intent(getActivity(), Checklist.class);
+                        intent = new Intent(getActivity(), BagChecklist.class);
                         break;
                     case 1:
-                        intent = new Intent(getActivity(), Dont.class);
+                        intent = new Intent(getActivity(), Prepare.class);
                         break;
                     case 2:
                         intent = new Intent(getActivity(), AtHome.class);
