@@ -1,4 +1,4 @@
-package com.example.mustafa.jishin;
+package com.dualeh.mustafa.jishin_free;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;

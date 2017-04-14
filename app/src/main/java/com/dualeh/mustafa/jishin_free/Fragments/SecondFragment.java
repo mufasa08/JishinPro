@@ -1,4 +1,4 @@
-package com.example.mustafa.jishin.Fragments;
+package com.dualeh.mustafa.jishin_free.Fragments;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -10,13 +10,13 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
-import com.example.mustafa.jishin.BagChecklist;
-import com.example.mustafa.jishin.CustomGridViewActivity;
-import com.example.mustafa.jishin.R;
-import com.example.mustafa.jishin.Slideshows.AtHome;
-import com.example.mustafa.jishin.Slideshows.Outside;
-import com.example.mustafa.jishin.Slideshows.Prepare;
-import com.example.mustafa.jishin.Slideshows.ToRemember;
+import com.dualeh.mustafa.jishin_free.BagChecklist;
+import com.dualeh.mustafa.jishin_free.CustomGridViewActivity;
+import com.dualeh.mustafa.jishin_free.R;
+import com.dualeh.mustafa.jishin_free.Slideshows.AtHome;
+import com.dualeh.mustafa.jishin_free.Slideshows.Outside;
+import com.dualeh.mustafa.jishin_free.Slideshows.Prepare;
+import com.dualeh.mustafa.jishin_free.Slideshows.ToRemember;
 
 public class SecondFragment extends Fragment {
     GridView androidGridView;

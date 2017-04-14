@@ -12,12 +12,12 @@
         "source": "C:\\Users\\Mustafa\\Desktop\\AndroidStudy\\Jishin\\library\\src\\main\\res\\drawable\\indicator_dot_grey.xml"
     },
     {
-        "merged": "C:\\Users\\Mustafa\\Desktop\\AndroidStudy\\Jishin\\library\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "C:\\Users\\Mustafa\\Desktop\\AndroidStudy\\Jishin\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\drawable\\abc_list_selector_holo_light.xml"
-    },
-    {
         "merged": "C:\\Users\\Mustafa\\Desktop\\AndroidStudy\\Jishin\\library\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
         "source": "C:\\Users\\Mustafa\\Desktop\\AndroidStudy\\Jishin\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\drawable\\abc_vector_test.xml"
+    },
+    {
+        "merged": "C:\\Users\\Mustafa\\Desktop\\AndroidStudy\\Jishin\\library\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "C:\\Users\\Mustafa\\Desktop\\AndroidStudy\\Jishin\\library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
     {
         "merged": "C:\\Users\\Mustafa\\Desktop\\AndroidStudy\\Jishin\\library\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",

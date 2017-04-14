@@ -13,13 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.mustafa.jishin.Utilities;
+package com.dualeh.mustafa.jishin_free.Utilities;
 
 import android.content.Context;
 import android.graphics.drawable.GradientDrawable;
-import android.media.Image;
 import android.support.v4.content.ContextCompat;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,7 +26,7 @@ import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.example.mustafa.jishin.R;
+import com.dualeh.mustafa.jishin_free.R;
 
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;

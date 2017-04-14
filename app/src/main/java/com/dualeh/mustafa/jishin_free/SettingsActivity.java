@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.mustafa.jishin;
+package com.dualeh.mustafa.jishin_free;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;

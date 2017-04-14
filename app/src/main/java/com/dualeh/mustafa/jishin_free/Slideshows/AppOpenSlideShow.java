@@ -1,16 +1,11 @@
-package com.example.mustafa.jishin.Slideshows;
+package com.dualeh.mustafa.jishin_free.Slideshows;
 
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
 
-import com.example.mustafa.jishin.R;
+import com.dualeh.mustafa.jishin_free.R;
 import com.github.paolorotolo.appintro.AppIntro;
 import com.github.paolorotolo.appintro.AppIntroFragment;
 

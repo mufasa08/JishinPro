@@ -1,4 +1,4 @@
-package com.example.mustafa.jishin;
+package com.dualeh.mustafa.jishin_free;
 
 import android.app.Activity;
 import android.app.LoaderManager;
@@ -17,10 +17,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import com.example.mustafa.jishin.Fragments.EarthquakeListTabFragment;
-import com.example.mustafa.jishin.Fragments.SecondFragment;
-import com.example.mustafa.jishin.Slideshows.AppOpenSlideShow;
-import com.example.mustafa.jishin.Utilities.EarthquakeAdapter;
+import com.dualeh.mustafa.jishin_free.Fragments.EarthquakeListTabFragment;
+import com.dualeh.mustafa.jishin_free.Fragments.SecondFragment;
+import com.dualeh.mustafa.jishin_free.Slideshows.AppOpenSlideShow;
+import com.dualeh.mustafa.jishin_free.Utilities.EarthquakeAdapter;
 
 public class MainActivity extends AppCompatActivity implements SharedPreferences.OnSharedPreferenceChangeListener {
 

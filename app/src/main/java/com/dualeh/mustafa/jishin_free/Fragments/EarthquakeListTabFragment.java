@@ -1,4 +1,4 @@
-package com.example.mustafa.jishin.Fragments;
+package com.dualeh.mustafa.jishin_free.Fragments;
 
 import android.app.LoaderManager;
 import android.content.Context;
@@ -18,10 +18,10 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.example.mustafa.jishin.R;
-import com.example.mustafa.jishin.Utilities.Earthquake;
-import com.example.mustafa.jishin.Utilities.EarthquakeAdapter;
-import com.example.mustafa.jishin.Utilities.EarthquakeLoader;
+import com.dualeh.mustafa.jishin_free.R;
+import com.dualeh.mustafa.jishin_free.Utilities.Earthquake;
+import com.dualeh.mustafa.jishin_free.Utilities.EarthquakeAdapter;
+import com.dualeh.mustafa.jishin_free.Utilities.EarthquakeLoader;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

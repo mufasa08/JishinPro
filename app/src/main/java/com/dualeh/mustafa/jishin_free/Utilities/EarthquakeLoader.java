@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.mustafa.jishin.Utilities;
+package com.dualeh.mustafa.jishin_free.Utilities;
 
 import android.content.AsyncTaskLoader;
 import android.content.Context;
