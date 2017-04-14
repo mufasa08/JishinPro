@@ -64,12 +64,7 @@ public class EarthquakeListTabFragment extends Fragment implements LoaderManager
         super.onAttach(context);
     }
 
-    @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
 
-        super.onActivityCreated(savedInstanceState);
-
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -164,6 +159,11 @@ public class EarthquakeListTabFragment extends Fragment implements LoaderManager
         return rootView;
     }
 
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        //your code which you want to refresh
+    }
     public void doShare(String shareBody) {
         // populate the share intent with data
 
@@ -175,6 +175,13 @@ public class EarthquakeListTabFragment extends Fragment implements LoaderManager
 
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        getActivity().getLoaderManager().restartLoader(0, null, this);
+
+
+    }
 
     @Override
     public Loader<List<Earthquake>> onCreateLoader(int i, Bundle bundle) {
@@ -199,6 +206,14 @@ public class EarthquakeListTabFragment extends Fragment implements LoaderManager
                 getString(R.string.settings_order_by_key),
                 getString(R.string.settings_order_by_default)
         );
+        String showLimit = sharedPrefs.getString(
+                getString(R.string.settings_limit_by_key),
+                getString(R.string.settings_limit_by_default)
+        );
+
+        if (Integer.parseInt(showLimit) > 30) {
+            showLimit = "30";
+        }
         Date today = new Date();
         Calendar cal = new GregorianCalendar();
         cal.setTime(today);
@@ -211,7 +226,7 @@ public class EarthquakeListTabFragment extends Fragment implements LoaderManager
         Uri.Builder uriBuilder = baseUri.buildUpon();
 
         uriBuilder.appendQueryParameter("format", "geojson");
-        uriBuilder.appendQueryParameter("limit", "10");
+        uriBuilder.appendQueryParameter("limit", showLimit);
         uriBuilder.appendQueryParameter("starttime", formattedDate);
         uriBuilder.appendQueryParameter("minmag", minMagnitude);
         uriBuilder.appendQueryParameter("orderby", orderBy);

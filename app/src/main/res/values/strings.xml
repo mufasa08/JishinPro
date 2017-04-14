@@ -114,7 +114,7 @@
     <!-- =Slide Show 3-->
     <string name="title_activity_slideshowthree">Slide Show 3</string>
     <string name="show3_slide1_title">At the Office</string>
-    <string name="show3_slide1_text">Copy machines and other offi ce furnishings on casters that have not been locked can move around the room in an unpredictable manner. You could be severely injured if you are hit by one. You could even be killed if you are hit in the head by objects such as shards of broken glass.</string>
+    <string name="show3_slide1_text">Copy machines and other office furnishings on casters that have not been locked can move around the room in an unpredictable manner. You could be severely injured if you are hit by one. You could even be killed if you are hit in the head by objects such as shards of broken glass.</string>
     <string name="show3_slide2_title">At the Office(cont\'d)</string>
     <string name="show3_slide2_text"> While being careful of falling cabinets and shattered glass, you need to move to a safe place to protect yourself from falling objects or furniture and other heavy items toppling over or sliding into you.Once the shaking has subsided and you are ready to evacuate.</string>
     <string name="show3_slide3_title">At the Office(cont\'d 2)</string>
@@ -219,5 +219,8 @@
     <string name="checklist_item19">Bankbook/card</string>
     <string name="checklist_item20">Seal(Hanko)</string>
     <string name="checklist_header">An <b><u>EMERGENCY BAG</u></b> contains the minimum essentials needed for the time being after you evacuate. Place them near the front entrance or in the bedroom, car, or shed so that you can carry them out even if your house has collapsed.</string>
+    <string name="settings_limit_by_key">limit</string>
+    <string name="settings_limit_by_default">15</string>
+    <string name="settings_limit_label"># of Earthquakes to List(Max 30)</string>
 
 </resources>

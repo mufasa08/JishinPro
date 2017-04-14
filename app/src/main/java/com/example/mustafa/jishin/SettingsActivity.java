@@ -45,6 +45,9 @@ public class SettingsActivity extends AppCompatActivity {
             Preference orderBy = findPreference(getString(R.string.settings_order_by_key));
             bindPreferenceSummaryToValue(orderBy);
 
+            Preference limitBy = findPreference(getString(R.string.settings_limit_by_key));
+            bindPreferenceSummaryToValue(limitBy);
+
             //Preference dateRange = findPreference(getString(R.string.settings_date_range));
             //bindPreferenceSummaryToValue(dateRange);
         }

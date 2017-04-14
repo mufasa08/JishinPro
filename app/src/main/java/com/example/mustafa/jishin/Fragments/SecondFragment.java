@@ -13,10 +13,10 @@ import android.widget.GridView;
 import com.example.mustafa.jishin.BagChecklist;
 import com.example.mustafa.jishin.CustomGridViewActivity;
 import com.example.mustafa.jishin.R;
-import com.example.mustafa.jishin.Slideshows.ToRemember;
-import com.example.mustafa.jishin.Slideshows.Outside;
 import com.example.mustafa.jishin.Slideshows.AtHome;
+import com.example.mustafa.jishin.Slideshows.Outside;
 import com.example.mustafa.jishin.Slideshows.Prepare;
+import com.example.mustafa.jishin.Slideshows.ToRemember;
 
 public class SecondFragment extends Fragment {
     GridView androidGridView;
@@ -30,11 +30,11 @@ public class SecondFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_second, container, false);
         int[] gridViewImageId = {
-                R.drawable.icon_checklist, R.drawable.prepare, R.drawable.home, R.drawable.outside, R.drawable.remember, R.drawable.web
+                R.drawable.icon_checklist, R.drawable.home, R.drawable.outside, R.drawable.remember, R.drawable.web
 
         };
         String[] gridViewString = {
-                getActivity().getString(R.string.prep_icon1_text), getActivity().getString(R.string.prep_icon2_text), getActivity().getString(R.string.prep_icon3_text), getActivity().getString(R.string.prep_icon4_text),
+                getActivity().getString(R.string.prep_icon1_text), getActivity().getString(R.string.prep_icon3_text), getActivity().getString(R.string.prep_icon4_text),
                 getActivity().getString(R.string.prep_icon5_text), getActivity().getString(R.string.prep_icon6_text),
 
         };
@@ -53,18 +53,15 @@ public class SecondFragment extends Fragment {
                         intent = new Intent(getActivity(), BagChecklist.class);
                         break;
                     case 1:
-                        intent = new Intent(getActivity(), Prepare.class);
-                        break;
-                    case 2:
                         intent = new Intent(getActivity(), AtHome.class);
                         break;
-                    case 3:
+                    case 2:
                         intent = new Intent(getActivity(), Outside.class);
                         break;
-                    case 4:
+                    case 3:
                         intent = new Intent(getActivity(), ToRemember.class);
                         break;
-                    case 5:
+                    case 4:
                         intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.metro.tokyo.jp/ENGLISH/GUIDE/BOSAI/"));
 
 
