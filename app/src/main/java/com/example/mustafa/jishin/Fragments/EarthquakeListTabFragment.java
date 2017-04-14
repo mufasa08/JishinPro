@@ -1,6 +1,5 @@
 package com.example.mustafa.jishin.Fragments;
 
-import android.app.Activity;
 import android.app.LoaderManager;
 import android.content.Context;
 import android.content.Intent;
@@ -16,16 +15,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.mustafa.jishin.R;
 import com.example.mustafa.jishin.Utilities.Earthquake;
 import com.example.mustafa.jishin.Utilities.EarthquakeAdapter;
 import com.example.mustafa.jishin.Utilities.EarthquakeLoader;
-import com.google.android.gms.plus.PlusOneButton;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -34,8 +30,6 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.List;
-
-import static android.R.attr.button;
 
 
 public class EarthquakeListTabFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<Earthquake>> {
@@ -112,7 +106,7 @@ public class EarthquakeListTabFragment extends Fragment implements LoaderManager
                         Intent intent = new Intent(Intent.ACTION_VIEW);
                         Double lat = currentEarthquake.getLatitude();
                         Double longi = currentEarthquake.getLongitude();
-                        intent.setData(Uri.parse("geo:0,0?q=" + lat + "," + longi + "(Epicentre of Earthquake)"));
+                        intent.setData(Uri.parse("geo:0,0?q=" + lat + "," + longi + "&z=15 (Epicentre of Earthquake)"));
                         if (intent.resolveActivity(getActivity().getPackageManager()) != null) {
                             startActivity(intent);
                         }
