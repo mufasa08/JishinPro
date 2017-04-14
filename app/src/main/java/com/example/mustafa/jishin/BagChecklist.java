@@ -1,49 +1,53 @@
 package com.example.mustafa.jishin;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.View;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.CheckBox;
-import android.widget.GridView;
+import android.widget.CompoundButton;
 
-import com.example.mustafa.jishin.Utilities.ChecklistGridViewActivity;
-
-public class BagChecklist extends AppCompatActivity {
+public class BagChecklist extends AppCompatActivity implements android.widget.CompoundButton.OnCheckedChangeListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_checklist);
 
-        String[] gridViewString = {
-                this.getString(R.string.prep_icon1_text), this.getString(R.string.prep_icon2_text), this.getString(R.string.prep_icon3_text), this.getString(R.string.prep_icon4_text),
-                this.getString(R.string.prep_icon5_text), this.getString(R.string.prep_icon6_text),
+        CheckBox cb1, cb2, cb3, cb4;
 
-        };
-        ChecklistGridViewActivity adapterViewAndroid = new ChecklistGridViewActivity(this, gridViewString);
-        GridView androidGridView = (GridView) findViewById(R.id.grid_view_checklist);
-        androidGridView.setAdapter(adapterViewAndroid);
+        cb1 = (CheckBox) findViewById(R.id.checklist_item1);
+        cb1.setChecked(getFromSP("cb1"));
+        cb1.setOnCheckedChangeListener(this);
+        cb2 = (CheckBox) findViewById(R.id.checklist_item2);
+        cb2.setChecked(getFromSP("cb2"));
+        cb2.setOnCheckedChangeListener(this);
+
     }
 
-    public void onCheckboxClicked(View view) {
-        // Is the view now checked?
-        boolean checked = ((CheckBox) view).isChecked();
+    private boolean getFromSP(String key) {
+        SharedPreferences preferences = getApplicationContext().getSharedPreferences("PROJECT_NAME", android.content.Context.MODE_PRIVATE);
+        return preferences.getBoolean(key, false);
+    }
 
-        /*Check which checkbox was clicked
-        switch(view.getId()) {
+    private void saveInSp(String key, boolean value) {
+        SharedPreferences preferences = getApplicationContext().getSharedPreferences("PROJECT_NAME", android.content.Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putBoolean(key, value);
+        editor.commit();
+    }
+
+    @Override
+    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+        // TODO Auto-generated method stub
+        switch (buttonView.getId()) {
             case R.id.checklist_item1:
-                if (checked);
-                // Put some meat on the sandwich
-                else;
-                // Remove the meat
+                saveInSp("cb1", isChecked);
                 break;
             case R.id.checklist_item2:
-                if (checked);
-                // Cheese me
-                else;
-                // I'm lactose intolerant
+                saveInSp("cb2", isChecked);
                 break;
-            // TODO: Veggie sandwich
-        }*/
+
+        }
+
     }
 }

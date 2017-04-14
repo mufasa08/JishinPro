@@ -198,5 +198,26 @@
     <!-- Credit-->
     <string name="credit_title">Credits</string>
     <string name="credit_text">The content of this slideshow was provided by the Tokyo Metropolitan Government. For More information please visit their website.</string>
+    <string name="checklist_item1">Flashlight</string>
+    <string name="checklist_item2">Portable Radio</string>
+    <string name="checklist_item3">Helmet(1 per person)</string>
+    <string name="checklist_item4">Protective hood</string>
+    <string name="checklist_item5">Work Gloves</string>
+    <string name="checklist_item6">Blanket</string>
+    <string name="checklist_item7">Batteries</string>
+    <string name="checklist_item8">Lighter</string>
+    <string name="checklist_item9">Candles</string>
+    <string name="checklist_item10">Water</string>
+    <string name="checklist_item11">Food</string>
+    <string name="checklist_item12">Instant Noodles</string>
+    <string name="checklist_item13">Can Opener</string>
+    <string name="checklist_item14">Knife</string>
+    <string name="checklist_item15">Clothing</string>
+    <string name="checklist_item16">Baby bottle</string>
+    <string name="checklist_item17">Cash</string>
+    <string name="checklist_item18">First-aid kit</string>
+    <string name="checklist_item19">Bankbook/card</string>
+    <string name="checklist_item20">Seal(Hanko)</string>
+    <string name="checklist_header">An <b><u>EMERGENCY BAG</u></b> contains the minimum essentials needed for the time being after you evacuate. Place them near the front entrance or in the bedroom, car, or shed so that you can carry them out even if your house has collapsed.</string>
 
 </resources>
