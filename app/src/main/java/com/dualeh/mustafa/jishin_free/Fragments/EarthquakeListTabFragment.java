@@ -33,25 +33,15 @@ import java.util.List;
 
 
 public class EarthquakeListTabFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<Earthquake>> {
-    /**
-     * Constant value for the earthquake loader ID. We can choose any integer.
-     * This really only comes into play if you're using multiple loaders.
-     */
+
+
     private static final int EARTHQUAKE_LOADER_ID = 1;
-    /**
-     * Adapter for the list of earthquakes
-     */
+
     private EarthquakeAdapter mAdapter;
 
-    /**
-     * URL for earthquake data from the USGS dataset
-     */
     private static final String USGS_REQUEST_URL =
             "https://earthquake.usgs.gov/fdsnws/event/1/query";
 
-    /**
-     * TextView that is displayed when the list is empty
-     */
     private TextView mEmptyStateTextView;
     private View rootView;
 
@@ -65,38 +55,30 @@ public class EarthquakeListTabFragment extends Fragment implements LoaderManager
     }
 
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        LoaderManager.enableDebugLogging(true);
+        //Generate View using adapter helper
         rootView = inflater.inflate(R.layout.fragment_earthquake_list_tab, container, false);
-        // Find a reference to the {@link ListView} in the layout
         ListView earthquakeListView = (ListView) rootView.findViewById(R.id.list);
-
         mEmptyStateTextView = (TextView) rootView.findViewById(R.id.empty_view);
         //TODO Fix Null Reference
 
         // Create a new adapter that takes an empty list of earthquakes as input
         mAdapter = new EarthquakeAdapter(getActivity(), new ArrayList<Earthquake>());
-
-        // Set the adapter on the {@link ListView}
-        // so the list can be populated in the user interface
         earthquakeListView.setAdapter(mAdapter);
 
         if (mEmptyStateTextView != null) {
             earthquakeListView.setEmptyView(mEmptyStateTextView);
 
 
-            // Set an item click listener on the ListView, which sends an intent to a web browser
-            // to open a website with more information about the selected earthquake.
-
-
+            // Set an item click listener on the ListView
             earthquakeListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                     // Find the current earthquake that was clicked on
                     long viewId = view.getId();
                     Earthquake currentEarthquake = mAdapter.getItem(position);
+                    //If map icon is clicked on a list item
                     if (viewId == R.id.imageButton) {
                         Intent intent = new Intent(Intent.ACTION_VIEW);
                         Double lat = currentEarthquake.getLatitude();
@@ -105,7 +87,7 @@ public class EarthquakeListTabFragment extends Fragment implements LoaderManager
                         if (intent.resolveActivity(getActivity().getPackageManager()) != null) {
                             startActivity(intent);
                         }
-
+                        //If share button is clicked on a list item
                     } else if (viewId == R.id.shareButton) {
                         Date dateObject = new Date(currentEarthquake.getTimeInMilliseconds());
                         SimpleDateFormat dateFormat = new SimpleDateFormat("LLL dd, yyyy");
@@ -114,11 +96,11 @@ public class EarthquakeListTabFragment extends Fragment implements LoaderManager
                         String formattedTime = timeFormat.format(dateObject);
                         //Open Share Intent
                         //TODO
-                        //last thing i  did was this
+                        //Share data in earthquake list item via another app
                         doShare("There was a magnitude " + currentEarthquake.getMagnitude() + " earthquake located " + currentEarthquake.getLocation() + " at " + formattedTime + " on " + formattedDate);
 
                     } else {
-
+                        //do nothing
 
                     }
                 }
@@ -138,11 +120,6 @@ public class EarthquakeListTabFragment extends Fragment implements LoaderManager
             if (networkInfo != null && networkInfo.isConnected()) {
                 // Get a reference to the LoaderManager, in order to interact with loaders.
                 LoaderManager loaderManager = getActivity().getLoaderManager();
-
-
-                // Initialize the loader. Pass in the int ID constant defined above and pass in null for
-                // the bundle. Pass in this activity for the LoaderCallbacks parameter (which is valid
-                // because this activity implements the LoaderCallbacks interface).
                 loaderManager.initLoader(EARTHQUAKE_LOADER_ID, null, this);
             } else {
                 // Otherwise, display error
@@ -164,6 +141,7 @@ public class EarthquakeListTabFragment extends Fragment implements LoaderManager
         super.onActivityCreated(savedInstanceState);
         //your code which you want to refresh
     }
+
     public void doShare(String shareBody) {
         // populate the share intent with data
 
@@ -190,7 +168,7 @@ public class EarthquakeListTabFragment extends Fragment implements LoaderManager
         String daysBack = sharedPrefs.getString(
                 getString(R.string.settings_number_of_days_key),
                 getString(R.string.settings_number_of_days_default));
-
+        //prevent shared preferences from saving excessively large number and crashing the app
         if (Integer.parseInt(daysBack) > 7300) {
             daysBack = "7300";
         }
@@ -222,9 +200,10 @@ public class EarthquakeListTabFragment extends Fragment implements LoaderManager
         Date todayminus = cal.getTime();
         String formattedDate = df2.format(todayminus);
 
+
+        //build Uri Request String
         Uri baseUri = Uri.parse(USGS_REQUEST_URL);
         Uri.Builder uriBuilder = baseUri.buildUpon();
-
         uriBuilder.appendQueryParameter("format", "geojson");
         uriBuilder.appendQueryParameter("limit", showLimit);
         uriBuilder.appendQueryParameter("starttime", formattedDate);
@@ -242,7 +221,6 @@ public class EarthquakeListTabFragment extends Fragment implements LoaderManager
     public void onLoadFinished(Loader<List<Earthquake>> loader, List<Earthquake> earthquakes) {
         // Hide loading indicator because the data has been loaded
 
-        //TODO Fix Null Reference
         if (mEmptyStateTextView != null) {
             View loadingIndicator = rootView.findViewById(R.id.loading_indicator);
             loadingIndicator.setVisibility(View.GONE);

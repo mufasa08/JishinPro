@@ -11,7 +11,8 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:largeHeap="true">
         <activity
             android:name="com.dualeh.mustafa.jishin_free.MainActivity"
             android:label="@string/app_name"
@@ -50,15 +51,12 @@
             android:label="@string/title_activity_slideshowfour"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="com.dualeh.mustafa.jishin_free.BagChecklist" />
-        <activity android:name=".Utilities.ChecklistGridViewActivity" />
         <!-- This meta-data tag is required to use Google Play Services. -->
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity
-            android:name="com.dualeh.mustafa.jishin_free.MyAdMobActivity"
-            android:label="@string/title_activity_my_ad_mob"></activity> <!-- Include the AdActivity configChanges and theme. -->
+        <!-- Include the AdActivity configChanges and theme. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"

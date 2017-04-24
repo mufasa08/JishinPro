@@ -33,21 +33,25 @@ public class SecondFragment extends Fragment {
                 R.drawable.icon_checklist, R.drawable.home, R.drawable.outside, R.drawable.remember, R.drawable.web
 
         };
+
         String[] gridViewString = {
                 getActivity().getString(R.string.prep_icon1_text), getActivity().getString(R.string.prep_icon3_text), getActivity().getString(R.string.prep_icon4_text),
                 getActivity().getString(R.string.prep_icon5_text), getActivity().getString(R.string.prep_icon6_text),
 
         };
+
+        //Initialize Second Fragment View with GridView
         CustomGridViewActivity adapterViewAndroid = new CustomGridViewActivity(getContext(), gridViewString, gridViewImageId);
         androidGridView = (GridView) rootView.findViewById(R.id.grid_view_image_text);
         androidGridView.setAdapter(adapterViewAndroid);
+
+        //Grid Items action
         androidGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int i, long id) {
                 Intent intent = new Intent(getActivity(), Prepare.class);
-                //Toast.makeText(getContext(), "GridView Item: " + gridViewString[+i], Toast.LENGTH_LONG).show();
                 switch (i) {
                     case 0:
                         intent = new Intent(getActivity(), BagChecklist.class);

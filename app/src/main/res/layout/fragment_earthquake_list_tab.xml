@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!-- Layout for a list of earthquakes -->
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
 
     <ListView
         android:id="@+id/list"
@@ -12,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:divider="@null"
-        android:dividerHeight="0dp" />
+        android:dividerHeight="0dp"/>
 
     <!-- Empty view is only visible when the list has no items. -->
     <TextView
